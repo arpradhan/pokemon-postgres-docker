@@ -25,6 +25,9 @@ from '/seed/pokemon_habitats.csv' delimiter ',' csv header;
 copy pokemon_moves (pokemon_id, version_group_id, move_id, pokemon_move_method_id, pokemon_level, pokemon_order)
 from '/seed/pokemon_moves.csv' delimiter ',' csv header;
 
+copy pokemon_move_methods
+from '/seed/pokemon_move_methods.csv' delimiter ',' csv header;
+
 copy pokemon_shapes
 from '/seed/pokemon_shapes.csv' delimiter ',' csv header;
 

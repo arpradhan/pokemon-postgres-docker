@@ -82,6 +82,12 @@ create table if not exists pokemon_moves
     pokemon_order               int
 );
 
+create table if not exists pokemon_move_methods
+(
+    id                  serial primary key,
+    identifier          text
+);
+
 create table if not exists pokemon_shapes
 (
     id                  serial primary key,
