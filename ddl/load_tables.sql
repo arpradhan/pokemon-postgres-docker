@@ -13,6 +13,9 @@ from '/seed/languages.csv' delimiter ',' csv header;
 copy moves
 from '/seed/moves.csv' delimiter ',' csv header;
 
+copy move_targets
+from '/seed/move_targets.csv' delimiter ',' csv header;
+
 copy pokemon
 from '/seed/pokemon.csv' delimiter ',' csv header;
 
