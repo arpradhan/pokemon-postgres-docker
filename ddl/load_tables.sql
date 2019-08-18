@@ -7,6 +7,9 @@ from '/seed/generations.csv' delimiter ',' csv header;
 copy pokemon
 from '/seed/pokemon.csv' delimiter ',' csv header;
 
+copy pokemon_colors
+from '/seed/pokemon_colors.csv' delimiter ',' csv header;
+
 copy pokemon_species
 from '/seed/pokemon_species.csv' delimiter ',' csv header;
 
