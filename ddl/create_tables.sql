@@ -26,4 +26,4 @@ create table if not exists stats
     identifier          text,
     is_battle_only      boolean,
     game_index          int
-)
+);
