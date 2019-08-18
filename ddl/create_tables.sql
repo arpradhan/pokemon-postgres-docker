@@ -70,6 +70,15 @@ create table if not exists pokemon_species
     conquest_order              int
 );
 
+create table if not exists pokemon_species_flavor_text
+(
+    id                  serial primary key,
+    species_id          int,
+    version_id          int,
+    language_id         int,
+    flavor_text         text
+);
+
 create table if not exists pokemon_stats
 (
     id                  serial primary key,

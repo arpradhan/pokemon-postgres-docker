@@ -22,6 +22,9 @@ from '/seed/pokemon_shapes.csv' delimiter ',' csv header;
 copy pokemon_species
 from '/seed/pokemon_species.csv' delimiter ',' csv header;
 
+copy pokemon_species_flavor_text (species_id, version_id, language_id, flavor_text)
+from '/seed/pokemon_species_flavor_text.csv' delimiter ',' csv header;
+
 copy pokemon_stats (pokemon_id, stat_id, base_stat, effort)
 from '/seed/pokemon_stats.csv' delimiter ',' csv header;
 
