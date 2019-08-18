@@ -28,6 +28,25 @@ create table if not exists languages
     pokemon_order       int
 );
 
+create table if not exists moves
+(
+    id                          serial primary key,
+    identifier                  text,
+    generation_id               int,
+    type_id                     int,
+    pokemon_power               int,
+    pp                          int,
+    accuracy                    int,
+    priority                    int,
+    target_id                   int,
+    damage_class_id             int,
+    effect_id                   int,
+    effect_chance               int,
+    contest_type_id             int,
+    contest_effect_id           int,
+    super_contest_effect_id     int
+);
+
 create table if not exists pokemon
 (
     id                  serial primary key,
