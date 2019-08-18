@@ -18,3 +18,12 @@ create table if not exists pokemon_stats
     base_stat           int,
     effort              int
 );
+
+create table if not exists stats
+(
+    id                  serial primary key,
+    damage_class_id     int,
+    identifier          text,
+    is_battle_only      boolean,
+    game_index          int
+)
