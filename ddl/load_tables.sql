@@ -39,3 +39,6 @@ from '/seed/stats.csv' delimiter ',' csv header;
 
 copy versions
 from '/seed/versions.csv' delimiter ',' csv header;
+
+copy version_groups
+from '/seed/version_groups.csv' delimiter ',' csv header;

@@ -124,3 +124,11 @@ create table if not exists versions
     version_group_id    int,
     identifier          text
 );
+
+create table if not exists version_groups
+(
+    id                  serial primary key,
+    identifier          text,
+    generation_id       int,
+    pokemon_order       int
+);
