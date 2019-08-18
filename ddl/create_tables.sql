@@ -53,6 +53,11 @@ create table if not exists move_damage_classes
     identifier          text
 );
 
+create table if not exists move_effects
+(
+    id                  serial primary key
+);
+
 create table if not exists move_targets
 (
     id                  serial primary key,

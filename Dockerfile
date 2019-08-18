@@ -4,6 +4,7 @@ ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/po
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/growth_rates.csv' /seed/growth_rates.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/languages.csv' /seed/languages.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/moves.csv' /seed/moves.csv
+ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/move_effects.csv' /seed/move_effects.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/move_damage_classes.csv' /seed/move_damage_classes.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/move_targets.csv' /seed/move_targets.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon.csv' /seed/pokemon.csv
