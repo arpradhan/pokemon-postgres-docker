@@ -1,3 +1,6 @@
+copy evolution_chains
+from '/seed/evolution_chains.csv' delimiter ',' csv header;
+
 copy generations
 from '/seed/generations.csv' delimiter ',' csv header;
 

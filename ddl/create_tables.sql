@@ -1,3 +1,9 @@
+create table if not exists evolution_chains
+(
+    id                      serial primary key,
+    baby_trigger_item_id    int
+);
+
 create table if not exists generations
 (
     id                  serial primary key,
