@@ -18,6 +18,16 @@ create table if not exists growth_rates
     formula             text
 );
 
+create table if not exists languages
+(
+    id                  serial primary key,
+    iso639              text,
+    iso3166             text,
+    identifier          text,
+    official            boolean,
+    pokemon_order       int
+);
+
 create table if not exists pokemon
 (
     id                  serial primary key,
