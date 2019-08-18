@@ -4,6 +4,9 @@ from '/seed/evolution_chains.csv' delimiter ',' csv header;
 copy generations
 from '/seed/generations.csv' delimiter ',' csv header;
 
+copy growth_rates
+from '/seed/growth_rates.csv' delimiter ',' csv header;
+
 copy pokemon
 from '/seed/pokemon.csv' delimiter ',' csv header;
 

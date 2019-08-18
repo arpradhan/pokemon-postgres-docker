@@ -11,6 +11,13 @@ create table if not exists generations
     identifier          text
 );
 
+create table if not exists growth_rates
+(
+    id                  serial primary key,
+    identifier          text,
+    formula             text
+);
+
 create table if not exists pokemon
 (
     id                  serial primary key,
