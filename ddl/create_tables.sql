@@ -29,6 +29,12 @@ create table if not exists pokemon_colors
     identifier          text
 );
 
+create table if not exists pokemon_shapes
+(
+    id                  serial primary key,
+    identifier          text
+);
+
 create table if not exists pokemon_species
 (
     id                          serial primary key,
