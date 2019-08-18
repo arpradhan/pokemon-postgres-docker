@@ -7,6 +7,9 @@ from '/seed/generations.csv' delimiter ',' csv header;
 copy growth_rates
 from '/seed/growth_rates.csv' delimiter ',' csv header;
 
+copy languages
+from '/seed/languages.csv' delimiter ',' csv header;
+
 copy pokemon
 from '/seed/pokemon.csv' delimiter ',' csv header;
 
@@ -22,8 +25,14 @@ from '/seed/pokemon_shapes.csv' delimiter ',' csv header;
 copy pokemon_species
 from '/seed/pokemon_species.csv' delimiter ',' csv header;
 
+copy pokemon_species_flavor_text (species_id, version_id, language_id, flavor_text)
+from '/seed/pokemon_species_flavor_text.csv' delimiter ',' csv header;
+
 copy pokemon_stats (pokemon_id, stat_id, base_stat, effort)
 from '/seed/pokemon_stats.csv' delimiter ',' csv header;
 
 copy stats
 from '/seed/stats.csv' delimiter ',' csv header;
+
+copy versions
+from '/seed/versions.csv' delimiter ',' csv header;

@@ -18,6 +18,16 @@ create table if not exists growth_rates
     formula             text
 );
 
+create table if not exists languages
+(
+    id                  serial primary key,
+    iso639              text,
+    iso3166             text,
+    identifier          text,
+    official            boolean,
+    pokemon_order       int
+);
+
 create table if not exists pokemon
 (
     id                  serial primary key,
@@ -70,6 +80,15 @@ create table if not exists pokemon_species
     conquest_order              int
 );
 
+create table if not exists pokemon_species_flavor_text
+(
+    id                  serial primary key,
+    species_id          int,
+    version_id          int,
+    language_id         int,
+    flavor_text         text
+);
+
 create table if not exists pokemon_stats
 (
     id                  serial primary key,
@@ -86,4 +105,11 @@ create table if not exists stats
     identifier          text,
     is_battle_only      boolean,
     game_index          int
+);
+
+create table if not exists versions
+(
+    id                  serial primary key,
+    version_group_id    int,
+    identifier          text
 );
