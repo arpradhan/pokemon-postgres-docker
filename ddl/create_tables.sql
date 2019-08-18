@@ -52,6 +52,17 @@ create table if not exists pokemon_habitats
     identifier          text
 );
 
+create table if not exists pokemon_moves
+(
+    id                          serial primary key,
+    pokemon_id                  int,
+    version_group_id            int,
+    move_id                     int,
+    pokemon_move_method_id      int,
+    pokemon_level               int,
+    pokemon_order               int
+);
+
 create table if not exists pokemon_shapes
 (
     id                  serial primary key,

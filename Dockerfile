@@ -6,6 +6,7 @@ ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/po
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon.csv' /seed/pokemon.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_colors.csv' /seed/pokemon_colors.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_habitats.csv' /seed/pokemon_habitats.csv
+ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_moves.csv' /seed/pokemon_moves.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_shapes.csv' /seed/pokemon_shapes.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_species.csv' /seed/pokemon_species.csv
 ADD --chown=postgres 'https://raw.githubusercontent.com/veekun/pokedex/master/pokedex/data/csv/pokemon_species_flavor_text.csv' /seed/pokemon_species_flavor_text.csv
