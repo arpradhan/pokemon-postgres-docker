@@ -1,3 +1,16 @@
+create table if not exists contest_effects
+(
+    id                      serial primary key,
+    appeal                  int,
+    jam                     int
+);
+
+create table if not exists contest_types
+(
+    id                      serial primary key,
+    identifier              text
+);
+
 create table if not exists evolution_chains
 (
     id                      serial primary key,
@@ -167,6 +180,12 @@ create table if not exists stats
     identifier          text,
     is_battle_only      boolean,
     game_index          int
+);
+
+create table if not exists super_contest_effects
+(
+    id                  serial primary key,
+    appeal              int
 );
 
 create table if not exists versions

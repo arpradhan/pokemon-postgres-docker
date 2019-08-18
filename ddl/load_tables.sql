@@ -1,3 +1,9 @@
+copy contest_effects
+from '/seed/contest_effects.csv' delimiter ',' csv header;
+
+copy contest_types
+from '/seed/contest_types.csv' delimiter ',' csv header;
+
 copy evolution_chains
 from '/seed/evolution_chains.csv' delimiter ',' csv header;
 
@@ -54,6 +60,9 @@ from '/seed/pokemon_stats.csv' delimiter ',' csv header;
 
 copy stats
 from '/seed/stats.csv' delimiter ',' csv header;
+
+copy super_contest_effects
+from '/seed/super_contest_effects.csv' delimiter ',' csv header;
 
 copy versions
 from '/seed/versions.csv' delimiter ',' csv header;
