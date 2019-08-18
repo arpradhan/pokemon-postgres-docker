@@ -1,3 +1,16 @@
+create table if not exists contest_effects
+(
+    id                      serial primary key,
+    appeal                  int,
+    jam                     int
+);
+
+create table if not exists contest_types
+(
+    id                      serial primary key,
+    identifier              text
+);
+
 create table if not exists evolution_chains
 (
     id                      serial primary key,
@@ -28,6 +41,51 @@ create table if not exists languages
     pokemon_order       int
 );
 
+create table if not exists moves
+(
+    id                          serial primary key,
+    identifier                  text,
+    generation_id               int,
+    type_id                     int,
+    pokemon_power               int,
+    pp                          int,
+    accuracy                    int,
+    priority                    int,
+    target_id                   int,
+    damage_class_id             int,
+    effect_id                   int,
+    effect_chance               int,
+    contest_type_id             int,
+    contest_effect_id           int,
+    super_contest_effect_id     int
+);
+
+create table if not exists move_damage_classes
+(
+    id                  serial primary key,
+    identifier          text
+);
+
+create table if not exists move_effects
+(
+    id                  serial primary key
+);
+
+create table if not exists move_flavor_text
+(
+    id                  serial primary key,
+    move_id             int,
+    version_group_id    int,
+    language_id         int,
+    flavor_text         text
+);
+
+create table if not exists move_targets
+(
+    id                  serial primary key,
+    identifier          text
+);
+
 create table if not exists pokemon
 (
     id                  serial primary key,
@@ -47,6 +105,23 @@ create table if not exists pokemon_colors
 );
 
 create table if not exists pokemon_habitats
+(
+    id                  serial primary key,
+    identifier          text
+);
+
+create table if not exists pokemon_moves
+(
+    id                          serial primary key,
+    pokemon_id                  int,
+    version_group_id            int,
+    move_id                     int,
+    pokemon_move_method_id      int,
+    pokemon_level               int,
+    pokemon_order               int
+);
+
+create table if not exists pokemon_move_methods
 (
     id                  serial primary key,
     identifier          text
@@ -107,9 +182,23 @@ create table if not exists stats
     game_index          int
 );
 
+create table if not exists super_contest_effects
+(
+    id                  serial primary key,
+    appeal              int
+);
+
 create table if not exists versions
 (
     id                  serial primary key,
     version_group_id    int,
     identifier          text
+);
+
+create table if not exists version_groups
+(
+    id                  serial primary key,
+    identifier          text,
+    generation_id       int,
+    pokemon_order       int
 );
