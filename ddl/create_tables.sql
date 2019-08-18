@@ -10,6 +10,28 @@ create table if not exists pokemon
     is_default          boolean
 );
 
+create table if not exists pokemon_species
+(
+    id                          serial primary key,
+    identifier                  text,
+    generation_id               int,
+    evolves_from_species_id     int,
+    evolution_chain_id          int,
+    color_id                    int,
+    shape_id                    int,
+    habitat_id                  int,
+    gender_rate                 int,
+    capture_rate                int,
+    base_happiness              int,
+    is_baby                     boolean,
+    hatch_counter               int,
+    has_gender_differences      boolean,
+    growth_rate_id              int,
+    forms_switchable            boolean,
+    pokemon_order               int,
+    conquest_order              int
+);
+
 create table if not exists pokemon_stats
 (
     id                  serial primary key,
