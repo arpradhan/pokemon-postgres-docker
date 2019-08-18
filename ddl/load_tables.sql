@@ -13,11 +13,14 @@ from '/seed/languages.csv' delimiter ',' csv header;
 copy moves
 from '/seed/moves.csv' delimiter ',' csv header;
 
+copy move_damage_classes
+from '/seed/move_damage_classes.csv' delimiter ',' csv header;
+
 copy move_effects
 from '/seed/move_effects.csv' delimiter ',' csv header;
 
-copy move_damage_classes
-from '/seed/move_damage_classes.csv' delimiter ',' csv header;
+copy move_flavor_text (move_id, version_group_id, language_id, flavor_text)
+from '/seed/move_flavor_text.csv' delimiter ',' csv header;
 
 copy move_targets
 from '/seed/move_targets.csv' delimiter ',' csv header;

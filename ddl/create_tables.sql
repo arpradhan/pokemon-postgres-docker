@@ -58,6 +58,15 @@ create table if not exists move_effects
     id                  serial primary key
 );
 
+create table if not exists move_flavor_text
+(
+    id                  serial primary key,
+    move_id             int,
+    version_group_id    int,
+    language_id         int,
+    flavor_text         text
+);
+
 create table if not exists move_targets
 (
     id                  serial primary key,
