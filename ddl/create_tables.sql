@@ -96,3 +96,10 @@ create table if not exists stats
     is_battle_only      boolean,
     game_index          int
 );
+
+create table if not exists versions
+(
+    id                  serial primary key,
+    version_group_id    int,
+    identifier          text
+);

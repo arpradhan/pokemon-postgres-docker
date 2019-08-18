@@ -30,3 +30,6 @@ from '/seed/pokemon_stats.csv' delimiter ',' csv header;
 
 copy stats
 from '/seed/stats.csv' delimiter ',' csv header;
+
+copy versions
+from '/seed/versions.csv' delimiter ',' csv header;
