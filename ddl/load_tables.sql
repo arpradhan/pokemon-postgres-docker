@@ -13,6 +13,9 @@ from '/seed/languages.csv' delimiter ',' csv header;
 copy moves
 from '/seed/moves.csv' delimiter ',' csv header;
 
+copy move_damage_classes
+from '/seed/move_damage_classes.csv' delimiter ',' csv header;
+
 copy move_targets
 from '/seed/move_targets.csv' delimiter ',' csv header;
 

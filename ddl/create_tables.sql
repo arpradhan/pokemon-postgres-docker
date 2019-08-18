@@ -47,6 +47,12 @@ create table if not exists moves
     super_contest_effect_id     int
 );
 
+create table if not exists move_damage_classes
+(
+    id                  serial primary key,
+    identifier          text
+);
+
 create table if not exists move_targets
 (
     id                  serial primary key,
