@@ -1,3 +1,10 @@
+create table if not exists generations
+(
+    id                  serial primary key,
+    main_region_id      int,
+    identifier          text
+);
+
 create table if not exists pokemon
 (
     id                  serial primary key,
